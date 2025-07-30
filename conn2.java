@@ -14,7 +14,7 @@ public class conn2{
     public conn2(){
         try{
             Class.forName("com.mysql.jdbc.Driver");  
-            c =DriverManager.getConnection("jdbc:\"jdbcmysql://localhost:3306/ems?zeroDateTimeBehavior=CONVERT_TO_NULL","root","eviljay_4");    
+            c =DriverManager.getConnection("your jdbc connection url");    
             s =c.createStatement();
         }catch(Exception e) {
             e.printStackTrace();
