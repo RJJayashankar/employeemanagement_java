@@ -14,11 +14,11 @@ public class conn1{
     public conn1(){
         try{
 //            Class.forName("com.mysql.cj.jdbc.Driver");  
-//            c =DriverManager.getConnection("jdbc:\"jdbcmysql://localhost:3306/ems?zeroDateTimeBehavior=CONVERT_TO_NULL","root","eviljay_4");    
+//            c =DriverManager.getConnection("");    
 //            s =c.createStatement();
 
         Class.forName("com.mysql.jdbc.Driver");  
-        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ems","root","eviljay_4");  
+        Connection con=DriverManager.getConnection("your connection url,password");  
         //here sonoo is database name, root is username and password  
         s=con.createStatement();  
         }catch(Exception e) {
